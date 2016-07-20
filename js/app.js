@@ -26,6 +26,7 @@ $(document).ready(function(){
 	})
 	.mouseleave(function(){
 		$('.ryu-ready').hide();
+		$('.ryu-cool').hide();
 		$('.ryu-still').show();
 	})
 	.mousedown(function(){
