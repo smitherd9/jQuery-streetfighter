@@ -9,15 +9,24 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+	<audio controls autoplay loop>
+    	<source src="sound/ryu-theme.mp3" type="audio/mpeg"></audio>
 	<div class="main">
+	<h3>How to control Ryu:
+	<br/>Mouse over Ryu to put him in his ready position.
+	<br/>Click anywhere to have Ryu throw a hadouken
+	<br/>Press 'x' to put him in a cool pose
+	</h3>
 		<div class="ryu">
 			<div class="ryu-still"></div>
 			<div class="ryu-ready"></div>
 			<div class="ryu-throwing"></div>
+			<div class="ryu-cool"></div>
 			
 		</div>
 		<div class="hadouken"></div>
 	</div>
+	<audio id="hadouken-sound" src="sound/hadouken.mp3">
 	
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
