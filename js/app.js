@@ -12,12 +12,12 @@ $(document).ready(function(){
 		if(keycode == '88'){
 		
 		$('.ryu-still').hide();
-		console.log('booya shigga wiggy');
 		$('.ryu-ready').hide();
 		$('.ryu-cool').show();	
 	}
-  });
+  })
 
+	
 
 	$('.ryu').mouseenter(function(){
 		$('.ryu-still').hide();
@@ -51,17 +51,5 @@ $(document).ready(function(){
 	});
 
 
-	//$('.ryu').keydown(function(event){
-		//var keycode = (event.keyCode ? event.keyCode : event.which);
-		//if(keycode == '88'){
-			//alert("shit crazy faka");
-		//$('.ryu-still').hide();
-		//console.log('booya shigga wiggy');
-		//$('.ryu-ready').hide();
-		//$('.ryu-cool').show();	
-	//}
-  //});
 	
-
-
 });
