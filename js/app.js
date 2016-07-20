@@ -6,8 +6,22 @@ $(document).ready(function(){
   		$('#hadouken-sound')[0].play();
 }
 
+
+	$(document).keydown(function(event){
+		var keycode = (event.keyCode ? event.keyCode : event.which);
+		if(keycode == '88'){
+		
+		$('.ryu-still').hide();
+		console.log('booya shigga wiggy');
+		$('.ryu-ready').hide();
+		$('.ryu-cool').show();	
+	}
+  });
+
+
 	$('.ryu').mouseenter(function(){
 		$('.ryu-still').hide();
+		$('.ryu-cool').hide();
 		$('.ryu-ready').show();
 	})
 	.mouseleave(function(){
@@ -17,6 +31,7 @@ $(document).ready(function(){
 	.mousedown(function(){
 		playHadouken();
 		$('.ryu-ready').hide();
+		$('.ryu-cool').hide();
 		$('.ryu-throwing').show();
 		$('.hadouken').finish().show().animate({'left': '1103px'},
 			500,
@@ -36,7 +51,17 @@ $(document).ready(function(){
 	});
 
 
+	//$('.ryu').keydown(function(event){
+		//var keycode = (event.keyCode ? event.keyCode : event.which);
+		//if(keycode == '88'){
+			//alert("shit crazy faka");
+		//$('.ryu-still').hide();
+		//console.log('booya shigga wiggy');
+		//$('.ryu-ready').hide();
+		//$('.ryu-cool').show();	
+	//}
+  //});
+	
+
+
 });
-
-
-
